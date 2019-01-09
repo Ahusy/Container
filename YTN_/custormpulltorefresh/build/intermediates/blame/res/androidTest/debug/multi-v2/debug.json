@@ -1,0 +1,148 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ko_values-ko.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh-rHK_values-zh-rHK.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ru_values-ru.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-en_values-en.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ms_values-ms.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh-rCN_values-zh-rCN.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ja_values-ja.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-1\\files-1.1\\recyclerview-v7-25.3.1.aar\\995d3f83e3b04e4545f82d4beae47d98\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "372,447,523,595",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "442,518,590,656"
+                    },
+                    "to": {
+                        "startLines": "22,23,24,25",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2282,2357,2433,2505",
+                        "endColumns": "74,75,71,65",
+                        "endOffsets": "2352,2428,2500,2566"
+                    }
+                },
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1553,1615,1678,1734,1798,1853,1910,1965,2023,2076,2178,2292,2400,2461,2528",
+                        "endColumns": "61,62,55,63,54,56,54,57,52,101,113,107,60,66,64",
+                        "endOffsets": "1610,1673,1729,1793,1848,1905,1960,2018,2071,2173,2287,2395,2456,2523,2588"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1870,1932,1995,2051,2115,2170,2227,2571,2629,2682,2784,2898,3006,3067,3134",
+                        "endColumns": "61,62,55,63,54,56,54,57,52,101,113,107,60,66,64",
+                        "endOffsets": "1927,1990,2046,2110,2165,2222,2277,2624,2677,2779,2893,3001,3062,3129,3194"
+                    }
+                }
+            ]
+        }
+    ]
+}

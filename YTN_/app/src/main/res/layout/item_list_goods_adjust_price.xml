@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp">
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--    <CheckBox
+            android:id="@+id/item_goods_adjust_price_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomCheckBoxTheme"
+            android:checked="false"
+            android:focusable="false"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            />-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_goods_adjust_price_img"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        fresco:actualImageScaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_goods_adjust_price_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/item_goods_adjust_price_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/item_goods_adjust_stand_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/item_goods_adjust_counter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/item_goods_adjust_price_edit"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/et_background"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        android:maxLength="4"
+        android:textSize="14sp"
+        tools:ignore="LabelFor"/>
+
+
+</LinearLayout>

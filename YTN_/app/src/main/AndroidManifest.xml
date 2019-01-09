@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="code.ytn.cn">
+
+    <!-- 加启动图标 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK">
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+
+    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+    <uses-feature android:name="android.hardware.touchscreen"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".launcher.controller.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".update.controller.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityDialogMatch"/>
+
+        <service
+            android:name=".update.service.UpdateService"
+            android:enabled="true"/>
+        <service android:name=".launcher.service.InitializeService"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="code.ytn.cn.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="rSGV3TxH0Kgw5UqxBNkC0QGUupdBwXg8"/>
+
+        <!-- 极光 -->
+        <receiver
+            android:name=".base.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="code.ytn.cn"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".login.controller.LoginActivity"/>
+        <activity android:name=".login.controller.ForgetPasswordActivity"/>
+        <activity android:name=".home.controller.CounterListActivity"/>
+        <activity android:name=".home.controller.LanguageAndAreaActivity"/>
+        <activity
+            android:name=".home.controller.AddNewCheckActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.ChooseGoodsActivity"/>
+        <activity android:name=".home.controller.CounterActivity"/>
+        <activity
+            android:name=".home.controller.ExecuteOutActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+            android:name=".home.controller.ExecuteInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.FacilityActivity"/>
+        <activity
+            android:name=".home.controller.GoodsAllotActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.OutGoodsActivity"/>
+        <activity android:name=".home.controller.InputGoodsActivity"/>
+        <activity android:name=".home.controller.OrderQueryActivity"/>
+        <activity android:name=".home.controller.OrderQueryDetailActivity"/>
+        <activity
+            android:name=".home.controller.RepairsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+            android:name=".home.controller.RepertoryCheckActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.ZxingActivity"/>
+        <activity android:name=".home.controller.InGoodsDetailActivity"/>
+        <activity android:name=".home.controller.RepertoryCheckDetailActivity"/>
+        <activity android:name=".home.controller.OutDetailActivity"/>
+        <activity android:name=".BaiMapActivity"/>
+        <activity
+            android:name=".home.controller.ReplenishmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.ReplenishmentListActivity"/>
+        <activity android:name=".home.controller.ReplmentDetailActivity"/>
+        <activity android:name=".shop.controller.ShopManagerHomeListActivity"/>
+        <activity android:name=".shop.controller.ShopManagerHomeActivity"/>
+        <activity
+            android:name=".shop.controller.ValetOrderActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".shop.controller.AddGoodsActivity"/>
+        <activity
+            android:name=".shop.controller.GoodsAdjustPriceActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".shop.controller.AddGoodsAdjustActivity"/>
+        <activity android:name=".home.controller.QueryRepetoryActivity"/>
+        <activity
+            android:name=".home.controller.WarningManagerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".home.controller.FacilityStatusActivity"/>
+        <activity android:name=".shop.controller.OrderMissActivity"/>
+        <activity android:name=".shop.controller.OrderMissDetailActivity"/>
+        <activity android:name=".shop.controller.SalesRankActivity"/>
+        <activity
+            android:name=".home.controller.NewInputActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+            android:name=".home.controller.NewOutActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".shop.controller.MessageActivity">
+        </activity>
+        <activity android:name=".shop.controller.MessageDetailActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:background="@color/white">
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_add_goods_img"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        fresco:actualImageScaleType="focusCrop"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/item_add_goods_img"
+        android:layout_toLeftOf="@+id/item_add_goods_adjust_cb">
+
+        <TextView
+            android:id="@+id/item_add_goods_adjust_price_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农夫山泉矿泉水"
+            android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/item_add_goods_adjust_price_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="规格:"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/item_add_goods_adjust_stand_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="标准售价:"
+                android:textSize="14sp"
+                />
+
+
+        <TextView
+            android:id="@+id/item_add_goods_adjust_counter_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货柜售价:"
+            android:textSize="14sp"/>
+
+
+
+        </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/item_add_goods_adjust_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomCheckBoxTheme"
+        android:checked="false"
+        android:focusable="false"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/polling_comit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_counter_name"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/polling_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <View style="@style/person_split_margin_left_right"/>
+
+        <LinearLayout
+            android:id="@+id/polling_cause_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_repairs_cause"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/polling_cause"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15sp"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/list_more"-->
+                <!--android:layout_marginRight="5dp"/>-->
+            <code.ytn.cn.utils.MySpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false">
+            </code.ytn.cn.utils.MySpinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/polling_et"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:hint="@string/text_counter_status"
+            android:textSize="14sp"
+            android:background="@drawable/et_background"
+            >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_photo_input"
+                android:textSize="14sp"
+                android:padding="10dp"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/polling_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                fresco:failureImage="@drawable/photo"
+                fresco:placeholderImage="@drawable/photo"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_counter_block"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+            
+            <code.ytn.cn.utils.ToggleButton
+                android:id="@+id/toggbtn"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/polling_comit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/dodgerblue"
+        android:gravity="center"
+        android:text="@string/text_repairs_comit"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

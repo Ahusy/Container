@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.shop.controller.OrderMissActivity">
+    <include layout="@layout/load_data_status_view"
+        android:id="@+id/no_wifi"
+        android:visibility="gone"/>
+    <com.common.widget.FootLoadingListView
+        android:id="@+id/order_miss_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.common.widget.FootLoadingListView>
+
+    <RelativeLayout
+        android:id="@+id/img_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zw"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无消单记录"
+            android:layout_below="@+id/img"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(点击刷新)"
+            android:layout_below="@+id/text"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

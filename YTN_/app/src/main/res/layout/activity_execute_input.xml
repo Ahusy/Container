@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.home.controller.ExecuteInputActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:text="@string/text_input_code"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_toStartOf="@+id/execute_input_select"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <View style="@style/person_split_margin_left_right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:text="@string/text_inputt_counter"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv2"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View style="@style/person_split_margin_left_right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:text="@string/text_allot_time"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv3"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View style="@style/person_split_margin_left_right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:text="@string/text_person_zd"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/execute_input_person_zd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv4"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_person_cz"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/execute_input_person_cz"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>-->
+
+        <View style="@style/person_split_matchs"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:text="@string/text_goods_name"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:text="@string/text_input_count"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:text="@string/text_sure_count"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/execute_input_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/execute_input_comit"
+        android:layout_below="@+id/lll">
+    </ListView>
+
+    <TextView
+        android:id="@+id/execute_input_comit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/comit_button"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/text_comit_input"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+</RelativeLayout>

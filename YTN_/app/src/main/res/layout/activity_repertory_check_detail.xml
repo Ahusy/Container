@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.home.controller.RepertoryCheckDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_repertory_check_code"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/repertory_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_toStartOf="@+id/repertory_select"/>
+
+            <TextView
+                android:id="@+id/repertory_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View style="@style/person_split_margin_left_right"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_check_counter"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/repertory_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv2"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <View style="@style/person_split_margin_left_right"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_repertory_check_time"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/repertory_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv3"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <View style="@style/person_split_margin_left_right"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_repertory_person"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/repertory_person_zd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv4"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+<!--        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_person_cz"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/repertory_person_cz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <View style="@style/person_split_matchs"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:text="@string/text_goods_name"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:text="@string/text_damage_goods"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"
+                android:gravity="right"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pay_goods"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:gravity="right"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/repertory_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null">
+        </ListView>
+
+</LinearLayout>
+</LinearLayout>

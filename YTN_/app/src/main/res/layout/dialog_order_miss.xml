@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/round_rect_white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_miss_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="消单查询"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始日期:"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/dialog_order_miss_begin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:hint="请选择日期"
+            android:padding="5dp"
+            android:background="@drawable/et_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束日期:"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/dialog_order_miss_over"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:inputType="number"
+            android:hint="请选择日期"
+            android:maxLength="11"
+            android:background="@drawable/et_background"/>
+    </LinearLayout>
+
+    <View style="@style/person_split_match"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_order_miss_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/cancel1"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/spilt_line"/>
+
+        <TextView
+            android:id="@+id/dialog_order_miss_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/dialog_button_text"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+</LinearLayout>

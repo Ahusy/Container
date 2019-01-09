@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code.ytn.cn.home.controller.NewOutActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_goout_counter"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/new_out_drk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv1"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_in_warehouse"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/new_out_dck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv2"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+        <View
+            style="@style/person_split_matchs"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/new_out_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:layout_above="@+id/btm_ll">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/btm_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/new_out_choose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#476480"
+            android:gravity="center"
+            android:text="@string/title_choose_goods"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/new_out_commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/comit_button"
+            android:gravity="center"
+            android:text="@string/text_commit_out_order"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

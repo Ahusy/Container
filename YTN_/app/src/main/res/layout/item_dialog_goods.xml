@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:padding="10dp"
+              android:id="@+id/item_dialog_ll">
+
+    <CheckBox
+        android:id="@+id/item_dialog_lv_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomCheckBoxTheme"
+        android:checked="false"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_dialog_lv_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        fresco:actualImageScaleType="focusCrop"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/item_dialog_lv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"/>
+
+</LinearLayout>

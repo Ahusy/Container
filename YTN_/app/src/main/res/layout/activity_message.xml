@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.shop.controller.MessageActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/message_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/dodgerblue"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/dodgerblue"
+        app:tabTextColor="#000000"
+        />
+    <code.ytn.cn.shop.view_.NoScrollViewPager
+        android:id="@+id/message_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_tab">
+    </code.ytn.cn.shop.view_.NoScrollViewPager>
+
+</RelativeLayout>

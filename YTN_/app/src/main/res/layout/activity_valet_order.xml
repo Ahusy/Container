@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/valet_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.shop.controller.ValetOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/text_phoneNum"
+                android:textSize="14sp"/>
+
+            <code.ytn.cn.widget.ClearEditText
+                android:id="@+id/valet_order_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_please_phoneNum"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/valet_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="渠 道 号:"
+                android:textSize="14sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/valet_qdNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"
+                android:hint="点击选择"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/index"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="15dp"
+            android:paddingStart="12dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_goods_name"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_count"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <View
+            style="@style/person_split_match"
+            android:layout_marginTop="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/valet_order_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/person_split_match"/>
+
+        <LinearLayout
+            android:id="@+id/valot_order_btm"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="7dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="@string/text_total"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/valet_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/person_split_match"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/valet_order_add_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_button"
+                android:gravity="center"
+                android:padding="7dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="@string/text_add_goods"
+                android:textColor="@color/white"
+                tools:ignore="RelativeOverlap"/>
+
+            <TextView
+                android:id="@+id/valet_order_comit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_button"
+                android:gravity="center"
+                android:padding="7dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="@string/text_sure_k"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/common_bg</item>
+        <item name="colorPrimaryDark">@color/dodgerblue</item>
+        <item name="colorAccent">@color/dodgerblue</item>
+    </style>
+
+    <!--充满布局的分割线-->
+    <style name="person_split_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/home_more_textcolor</item>
+    </style>
+
+    <!--充满布局的分割线-->
+    <style name="person_split_matchs">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10px</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!--有左右距离的分割线-->
+    <style name="person_split_margin_left_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3px</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!--有左右距离的分割线s-->
+    <style name="person_split_margin_left_rights">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3px</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:background">@color/home_more_textcolor</item>
+    </style>
+
+    <style name="person_split_margins_left_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5px</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!--宽度填充父布局的Button-->
+    <style name="SingleGreenBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/dodgerblue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--单选样式-->
+    <style name="RadioBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:drawableEnd">@drawable/language_area_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- CustomCheckBox theme -->
+         <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+             <item name="android:button">@drawable/check_select</item>
+         </style>
+
+    <!--activity Dialog-->
+    <style name="ListDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="ActivityDialogMatch" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <color name="tram">#00000000</color>
+    <style name="dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/tram</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    //animal
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
+    </style>
+</resources>

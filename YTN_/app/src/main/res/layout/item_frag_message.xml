@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<code.ytn.cn.shop.view_.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frag_mess_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot"
+            android:layout_marginTop="13dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="15dp"
+        android:layout_toEndOf="@+id/frag_mess_dot">
+
+        <TextView
+            android:id="@+id/frag_mess_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品库存预警"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/frag_mess_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1年前"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/frag_mess_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frag_mess_title"
+            android:lines="2"
+            android:layout_marginTop="5dp"
+            android:maxEms="8"
+            android:ellipsize="end"
+            android:text="亲爱的管理员，您管理的货柜已被偷走，请查看详情！！！"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 下面是侧滑菜单项 即：第2+个子view-->
+    <Button
+        android:id="@+id/btn_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text=" 标记已读 "
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#F76E6B"
+        android:text=" 删除 "
+        android:textColor="@android:color/white"/>
+
+</code.ytn.cn.shop.view_.SwipeMenuLayout>

@@ -1,0 +1,51 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+	package
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:11-31
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:1:1-12:12
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:4:2-72
+	android:name
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:4:19-70
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:5:2-64
+	android:name
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:5:19-62
+application
+ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:7:2-10:16
+	android:label
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:9:3-35
+	android:allowBackup
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml:8:3-30
+uses-sdk
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		ADDED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml
+		INJECTED from D:\Me\freezerAPP\android\YTN_\commonlib\src\main\AndroidManifest.xml

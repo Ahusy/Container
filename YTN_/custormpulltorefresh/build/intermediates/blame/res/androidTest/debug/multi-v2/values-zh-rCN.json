@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+            "map": [
+                {
+                    "source": "D:\\Me\\freezerAPP\\android\\YTN_\\custormpulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,210,324,432,493,560",
+                        "endColumns": "52,101,113,107,60,66,64",
+                        "endOffsets": "103,205,319,427,488,555,620"
+                    }
+                }
+            ]
+        }
+    ]
+}

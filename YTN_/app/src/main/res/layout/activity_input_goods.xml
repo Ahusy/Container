@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code.ytn.cn.home.controller.InputGoodsActivity">
+
+    <com.common.widget.FootLoadingListView
+        android:id="@+id/input_goods_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_goods_news">
+    </com.common.widget.FootLoadingListView>
+
+    <TextView
+        android:id="@+id/input_goods_news"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/comit_button"
+        android:gravity="center"
+        android:text="@string/text_new_in_order"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

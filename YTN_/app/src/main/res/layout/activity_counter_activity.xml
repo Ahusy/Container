@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.home.controller.CounterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inc"
+        android:scrollbars="none"
+        tools:ignore="UnknownIdInLayout,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/text_facility_code"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/counter_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv1"
+                        android:layout_toStartOf="@+id/counter_select"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/counter_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="#00000000"
+                        />
+
+                </RelativeLayout>
+
+                <View style="@style/person_split_margin_left_right"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/text_facility_name"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/counter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv2"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View style="@style/person_split_margin_left_right"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/text_counter_address"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/counter_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv3"
+                        android:drawableEnd="@drawable/address_icon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+                <View style="@style/person_split_margin_left_right"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/text_distance"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/counter_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv4"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View style="@style/person_split_matchs"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:id="@+id/counter_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/v1"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/input"/>
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_goout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/v1"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/goout"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:id="@+id/counter_allot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/v2"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/goodsallot"/>
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/v2"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/repertory"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:id="@+id/counter_replenishment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/v3"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/replen"/>
+
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_facility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/v3"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/facility"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:id="@+id/counter_query"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/v4"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/orderquery"/>
+
+                    <View
+                        android:id="@+id/v4"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_query_repertory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/v4"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/query_repetory"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/counter_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:id="@+id/counter_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/v5"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/tiaojia"/>
+
+                    <View
+                        android:id="@+id/v5"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_place_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/v5"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/daike"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_diglog_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <View
+                        android:id="@+id/strut"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:id="@+id/counter_early_warning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/strut"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/yjsz"/>
+
+                    <ImageView
+                        android:id="@+id/counter_look_stockout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/strut"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/quehuo"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<include layout="@layout/inclu_buttom"-->
+    <!--android:id="@+id/inc"/>-->
+</RelativeLayout>

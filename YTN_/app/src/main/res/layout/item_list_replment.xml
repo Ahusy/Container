@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_replment_code"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_replment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv1"
+                android:layout_toStartOf="@+id/item_rep_select"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_rep_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_replment_counter"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_replment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv2"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_replment_time"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_replment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv3"
+                android:layout_toStartOf="@+id/item_replment_detail"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/item_replment_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_tran_button"
+                android:text="@string/text_look_detail"
+                android:padding="7dp"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/dodgerblue"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <View style="@style/person_split_matchs"/>
+
+</LinearLayout>

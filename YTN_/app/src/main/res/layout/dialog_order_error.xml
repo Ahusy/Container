@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择异常商品"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <View
+        style="@style/person_split_match"/>
+    
+    <ListView
+        android:id="@+id/dialog_lv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </ListView>
+
+    <View
+        style="@style/person_split_match"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="异常情况说明（结果只能提交一次，请认真填写）:"
+        android:padding="10dp"/>
+
+        <View
+            style="@style/person_split_match"/>
+
+    <code.ytn.cn.widget.ClearEditText
+        android:id="@+id/dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:hint="请输入异常描述。不超过300字"
+        android:maxLength="300"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:background="@null"
+        />
+        <View
+            style="@style/person_split_match"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/dialog_comit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　提交　"
+        android:textSize="15sp"
+        android:padding="7dp"
+        android:background="@drawable/ic_button"
+        android:layout_below="@+id/ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

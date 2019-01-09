@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="code.ytn.cn.home.controller.OrderQueryDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_num"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv1"
+                    android:layout_toStartOf="@+id/order_query_detail_select"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_select"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_time"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv2"
+                    android:textSize="14sp"/>
+
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_name"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv3"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_status"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv4"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_detail_pay"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv5"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_order_detail_abnormal"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_abnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv6"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/person_split_margin_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/text_buy_goods_count"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/order_query_detail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv7"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+            <View style="@style/person_split_matchs"/>
+
+            <com.common.view.ListViewForInner
+                android:id="@+id/order_query_detail_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </com.common.view.ListViewForInner>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:layout_above="@+id/ll">
+
+        <TextView
+            android:id="@+id/order_query_detail_yhq_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/order_query_detail_yhq_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E5F4FB"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp">
+
+        <TextView
+            android:id="@+id/order_query_detail_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/order_query_detail_price1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/order_query_detail_btm_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_button"
+            android:padding="7dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/text_order_cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/order_query_detail_btm_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/order_abno"
+            android:padding="7dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/order_error"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

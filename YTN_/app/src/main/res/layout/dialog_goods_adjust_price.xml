@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请确认调价商品和价格:"
+                android:textSize="18sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/person_split_margins_left_right"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:textSize="17sp"
+                android:gravity="left"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="调整后价格"
+                android:gravity="right"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+        <View
+            style="@style/person_split_margins_left_right"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/dialog_goods_adjust_price_lv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll">
+        <View
+            style="@style/person_split_margins_left_right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/dialog_goods_adjust_price_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="7dp"
+                android:text="　取消　"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_button"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/dialog_goods_adjust_price_comit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:padding="7dp"
+                android:text="　提交　"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_button"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

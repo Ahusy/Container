@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "code.ytn.cn"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 16
+        versionName "1.1.6"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库,还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', "x86_64", 'x86'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "028bd55459951da5a1c79c12", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    signingConfigs {
+        release {
+            keyAlias 'ytn'
+            keyPassword 'ytn888'
+            storeFile file('keystore.jks')
+            storePassword 'ytn888'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            //签名
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+
+    productFlavors {
+        "YTN" {}
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    // rename apk
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//				def fileName = outputFile.name
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+
+//				output.outputFile = new File(outputFile.parent, fileName)
+
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':commonlib')
+    implementation project(':custormpulltorefresh')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile "com.android.support:appcompat-v7:$rootProject.supportVersion"
+    compile "com.android.support:support-v4:$rootProject.supportVersion"
+    compile "com.android.support:design:$rootProject.supportVersion"
+    //zxing
+    //    compile 'com.google.zxing:core:latest.release'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'cn.jiguang.sdk:jpush:3.1.1'
+    compile 'cn.jiguang.sdk:jcore:1.1.9'
+    implementation project(':libzxing')
+    implementation files('libs/BaiduLBS_Android.jar')
+}

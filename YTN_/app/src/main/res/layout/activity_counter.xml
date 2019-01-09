@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code.ytn.cn.home.controller.CounterListActivity">
+
+    <include layout="@layout/load_data_status_view"
+             android:id="@+id/no_wifi"
+             android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/counter_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inc"
+        android:divider="@null">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/counter_img_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/inc">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zw"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂未配置货柜信息"
+            android:layout_below="@+id/img"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(点击刷新)"
+            android:layout_below="@+id/text"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/inclu_buttom"
+             android:id="@+id/inc"/>
+
+</RelativeLayout>

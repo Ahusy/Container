@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code.ytn.cn.login.controller.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_chant_num"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <code.ytn.cn.widget.ClearEditText
+                android:id="@+id/login_sh_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:inputType="number"
+                android:maxLength="12"
+                android:textSize="14sp"
+                android:hint="@string/et_hint_chant_num"
+                />
+        </LinearLayout>
+
+        <View style="@style/person_split_margin_left_right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_number"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <code.ytn.cn.widget.ClearEditText
+                android:id="@+id/login_account_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:maxLength="16"
+                android:hint="@string/et_hint_number"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <View style="@style/person_split_margin_left_right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_password"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <code.ytn.cn.widget.ClearEditText
+                android:id="@+id/login_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingEnd="10dp"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingStart="0dp"
+                android:textSize="14sp"
+                android:hint="@string/et_hint_password"
+                />
+        </LinearLayout>
+
+        <View style="@style/person_split_matchs"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/login_forget_password"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="@string/login_forget_password"
+                android:textSize="14sp"
+                android:gravity="center_vertical|right"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_comit"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/ic_button"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ytn_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

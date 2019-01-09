@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sao_adjust_price_img"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            fresco:actualImageScaleType="fitCenter"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/sao_adjust_price_img">
+
+                <TextView
+                    android:id="@+id/sao_adjust_price_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/sao_adjust_price_stand_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/sao_adjust_price_counter_price"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/person_split_margin_left_rights"/>
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调整后价格"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/sao_adjust_price_etxt"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:gravity="center"
+                android:maxLength="4"
+                android:layout_marginLeft="10dp"
+                android:inputType="number|numberDecimal"
+                android:background="@drawable/et_background"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sao_adjust_price_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抱歉，你挡路了"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/sao_adjust_price_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:text="　取消　"
+            android:gravity="center"
+            android:background="@drawable/ic_button"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/sao_adjust_price_comit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="7dp"
+            android:text="　确定　"
+            android:gravity="center"
+            android:background="@drawable/ic_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
